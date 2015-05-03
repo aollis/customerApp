@@ -1,1 +1,1 @@
-# angularPractice
+# angularApp
