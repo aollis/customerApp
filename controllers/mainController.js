@@ -1,5 +1,21 @@
 var customerApp = angular.module('customerApp', []);
 
+// demoApp.config(function ($routeProvider) {
+// 	$routeProvider
+// 		.when('/view1',
+// 			{
+// 				controller: 'mainController',
+// 				templateUrl: 'view1.html'
+// 			})
+// 		.when('/view2',
+// 			{
+// 				controller: 'mainController',
+// 				templateUrl: 'view2.html'
+// 			})
+// 		.otherwise({ redirectTo: '/view1' });
+			
+// });
+
 var controllers = {};
 
 controllers.mainController = function ($scope) {
@@ -21,20 +37,3 @@ controllers.mainController = function ($scope) {
 
 customerApp.controller(controllers);
 
-//routes that will be connected later//
-
-// demoApp.config(function ($routeProvider) {
-// 	$routeProvider
-// 		.when('/',
-// 			{
-// 				controller: 'mainController',
-// 				templateUrl: 'view1.html'
-// 			})
-// 		.when('/partial2',
-// 			{
-// 				controller: 'mainController',
-// 				templateUrl: 'view2.html'
-// 			})
-// 		.otherwise({ redirectTo: '/' });
-			
-// });
