@@ -1,2 +1,2 @@
 # angularApp
-# -App that manages customer profiles and orders
+ -App that manages customer profiles and orders
