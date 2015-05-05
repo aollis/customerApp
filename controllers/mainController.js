@@ -2,21 +2,19 @@ var customerApp = angular.module('customerApp', ['ngRoute']);
 
 customerApp.config(function ($routeProvider) {
 	$routeProvider
-		.when('view1',
-			{
-				templateUrl: 'view1.html',
-				controller: 'mainController'
+		.when('/view1', {
+				templateUrl: '/view1.html',
+				controller: '/mainController.js'
 				
 			})
-		.when('view2',
-			{
-				templateUrl: 'view2.html',
-				controller: 'mainController'
+		.when('/view2', {
+				templateUrl: '/view2.html',
+				controller: '/mainController.js'
 				
 			})
 
 		.otherwise({ 
-			redirectTo: 'view1'
+			redirectTo: '/view1'
 			 });
 			
 });
