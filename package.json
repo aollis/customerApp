@@ -1,0 +1,19 @@
+{
+  "name": "angularPractice",
+  "version": "1.0.0",
+  "description": "-App that manages customer profiles and orders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aollis/customerApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aollis/customerApp/issues"
+  },
+  "homepage": "https://github.com/aollis/customerApp"
+}

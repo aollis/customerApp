@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Angular App</title>
-</head>
-<body>
-	<div>
-		<div data-ng-view=""></div>
-	</div>
-</body>
+	<head>
+		<title>Angular App</title>
+	</head>
+	<body>
+		<div ng-app="customerApp">
+			<div ng-view=""></div>
+		</div>
+
+<script src="scripts/angular.js"></script>
+<script src="/controllers/mainController.js"></script>
+<script type="text/javascript" src="main.js"></script>
+	</body>
 </html>

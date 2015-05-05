@@ -1,24 +1,28 @@
-var customerApp = angular.module('customerApp', []);
+var customerApp = angular.module('customerApp', ['ngRoute']);
 
-// demoApp.config(function ($routeProvider) {
-// 	$routeProvider
-// 		.when('/view1',
-// 			{
-// 				controller: 'mainController',
-// 				templateUrl: 'view1.html'
-// 			})
-// 		.when('/view2',
-// 			{
-// 				controller: 'mainController',
-// 				templateUrl: 'view2.html'
-// 			})
-// 		.otherwise({ redirectTo: '/view1' });
+customerApp.config(function ($routeProvider) {
+	$routeProvider
+		.when('view1',
+			{
+				templateUrl: 'view1.html',
+				controller: 'mainController'
+				
+			})
+		.when('view2',
+			{
+				templateUrl: 'view2.html',
+				controller: 'mainController'
+				
+			})
+
+		.otherwise({ 
+			redirectTo: 'view1'
+			 });
 			
-// });
+});
 
-var controllers = {};
 
-controllers.mainController = function ($scope) {
+customerApp.controller('mainController', function ($scope) {
 	$scope.customers = [
 		{name: 'David Jones', city: 'New York' },
 		{name: 'Jamie Riley', city: 'Boston' },
@@ -33,7 +37,14 @@ controllers.mainController = function ($scope) {
 				city: $scope.newCustomer.city
 			});
 	}; 
-}
 
-customerApp.controller(controllers);
+	$scope.message = "Welcome to my Angular App!";
+
+});
+
+
+
+
+
+
 
