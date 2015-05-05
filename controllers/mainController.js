@@ -38,8 +38,6 @@ customerApp.controller('mainController', function ($scope) {
 			});
 	}; 
 
-	$scope.message = "Welcome to my Angular App!";
-
 });
 
 
