@@ -30,7 +30,7 @@ customerApp.controller('mainController', function ($scope) {
 		{name: 'Thomas Winter', city: 'Santa Barbara' }
 	];
 
-	$scope.addCustomer = function () {
+	$scope.addCustomer = function ($scope) {
 		$scope.customers.push(
 			{
 				name: $scope.newCustomer.name,
