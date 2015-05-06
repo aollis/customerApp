@@ -2,20 +2,9 @@ var customerApp = angular.module('customerApp', ['ngRoute']);
 
 customerApp.config(function ($routeProvider) {
 	$routeProvider
-		.when('/view1', {
-				templateUrl: '/view1.html',
-				controller: '/mainController.js'
-				
-			})
-		.when('/view2', {
-				templateUrl: '/view2.html',
-				controller: '/mainController.js'
-				
-			})
-
-		.otherwise({ 
-			redirectTo: '/view1'
-			 });
+	    .when('/index', route.resolve('view1'))
+	    .when('/view2', route.resolve('view2'))
+	    .otherwise({ redirectTo: '/index' });
 			
 });
 
@@ -28,13 +17,13 @@ customerApp.controller('mainController', function ($scope) {
 		{name: 'Thomas Winter', city: 'Santa Barbara' }
 	];
 
-	$scope.addCustomer = function ($scope) {
-		$scope.customers.push(
-			{
-				name: $scope.newCustomer.name,
-				city: $scope.newCustomer.city
-			});
-	}; 
+	// $scope.addCustomer = function ($scope) {
+	// 	$scope.customers.push(
+	// 		{
+	// 			name: $scope.newCustomer.name,
+	// 			city: $scope.newCustomer.city
+	// 		});
+	// }; 
 
 });
 
