@@ -2,7 +2,7 @@
   "name": "angularPractice",
   "version": "1.0.0",
   "description": "-App that manages customer profiles and orders",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
