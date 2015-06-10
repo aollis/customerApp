@@ -2,16 +2,16 @@
 
 		customerApp.config(function($routeProvider) {
 			$routeProvider
- 				.when('../index.html', {
-                    templateUrl: '../views/view1.html',
+ 				.when('/angularPractice/angularPractice/index.html', {
+                    templateUrl: '/angularPractice/angularPractice/views/view1.html',
                     controller: 'mainController'
                 })
-                .when('../views/view2', {
-                    templateUrl: '../views/view2.html',
+                .when('/angularPractice/angularPractice/views/view2', {
+                    templateUrl: '/angularPractice/angularPractice/views/view2.html',
                     controller: 'mainController'
                 })
                 .otherwise({
-                    redirectTo: '../views/view1.html'
+                    redirectTo: '/angularPractice/angularPractice/views/view1.html'
                     controller: 'mainController'
                 });
 
