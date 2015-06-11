@@ -1,4 +1,4 @@
-		var customerApp = angular.module('customerApp', []);
+		var customerApp = angular.module('customerApp', ['ngRoute']);
 
 		customerApp.config(function($routeProvider) {
 			$routeProvider
@@ -11,7 +11,7 @@
                     controller: 'mainController'
                 })
                 .otherwise({
-                    redirectTo: '/angularPractice/angularPractice/views/view1.html'
+                    redirectTo: '/angularPractice/angularPractice/views/view1.html',
                     controller: 'mainController'
                 });
 
